@@ -6,6 +6,7 @@ root.geometry('1300x700')
 frame = tk.Frame()
 frame.master.title('Click and Change')
 canvas = tk.Canvas(frame)
+root.resizable(0,0)
 # ------img------------
 charactor=tk.PhotoImage(file="img/character.png")
 wall=tk.PhotoImage(file="img/wall.png")
