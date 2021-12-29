@@ -330,14 +330,14 @@ def nextLevel():
     createGrid()
     canvas.create_image(250,250, image=win ,anchor="nw")
     canvas.create_rectangle(640, 490, 760, 550, fill='blue', tags='noContinuegame')
-    canvas.create_text(700, 520,text='NO', fill="white", font=('Purisa', 35), tags='noContinuegame')
+    canvas.create_text(700, 520,text='EXIT', fill="white", font=('Purisa', 30), tags='noContinuegame')
     # --play again--
     canvas.create_rectangle(450, 490, 580, 550, fill='blue', tags='continuegame')
-    canvas.create_text(515, 520,text='YES', fill="white", font=('Purisa', 35), tags='continuegame')
+    canvas.create_text(515, 520,text='AGAIN', fill="white", font=('Purisa', 30), tags='continuegame')
     # --back to level--
     canvas.create_text(100, 40,text='<<Back to menu', fill="white", font=('Purisa', 20), tags='noContinueLevel2')
     canvas.create_rectangle(800, 490, 920, 550, fill='blue', tags='nextLevel')
-    canvas.create_text(850, 520,text='Next', fill="white", font=('Purisa', 35), tags='nextLevel')
+    canvas.create_text(860, 520,text='NEXT', fill="white", font=('Purisa', 30), tags='nextLevel')
     # canvas.after(0, continueGame)
     checkForMonsterMove = [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
     # checkForStopCode = True
