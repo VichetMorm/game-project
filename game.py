@@ -82,8 +82,25 @@ def level_1(event):
     global array2D, numberComp, level1, checkForStopCode
     checkForStopCode = True
     level1 = True
+    numberComp = 1
+    array2D =     [[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 0, 7, 7, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 25, 7, 7, 7, 7, 7, 7, 7], 
+                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 7], 
+                    [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]]
+    findIndexOfMonster()
+
+def level_2(event):
+    global array2D, numberComp, level2, checkForStopCode
+    checkForStopCode = True
+    level2 = True
     numberComp = 14
-    array2D = [[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
+    array2D =   [[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
                 [7, 1, 0, 0, 0, 0, 0, 0, 5, 0, 0, 7, 0, 0, 0, 9, 0, 0, 0, 7],
                 [7, 0, 14, 7, 7, 7, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
                 [7, 2, 0, 0, 7, 25, 0, 7, 0, 0, 15, 0, 7, 8, 3, 0, 0, 0, 0, 7],
@@ -93,23 +110,7 @@ def level_1(event):
                 [7, 0, 0, 0, 7, 7, 0, 0, 7, 24, 0, 7, 7, 7, 7, 7, 7, 7, 7, 7], 
                 [7, 4, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 7], 
                 [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]]
-    findIndexOfMonster()
-
-def level_2(event):
-    global array2D, numberComp, level2, checkForStopCode
-    checkForStopCode = True
-    level2 = True
-    numberComp = 1
-    array2D =      [[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 0, 7, 7, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 25, 7, 7, 7, 7, 7, 7, 7], 
-                    [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 7], 
-                    [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]]    
+                   
     findIndexOfMonster()
 
 def level_3(event):
@@ -286,22 +287,20 @@ def moveCharactor(index1, index2):
                             array2D[v+(index1)][i+index2] = 24
                             array2D[v][i] = 0
                             sontaHaskey = True
-                            winsound.PlaySound("sounds/getKey.wav", winsound.SND_FILENAME)
+                            winsound.PlaySound("sounds/getKey.wav", winsound.SND_FILENAME | winsound.SND_ASYNC)
                             
                     # check for game win
                     elif array2D[v+(index1)][i+(index2)]==26 and sontaHaskey:
                             array2D[v+(index1)][i+index2] = 24
                             array2D[v][i] = 0
                             gameWin()
-                            winsound.PlaySound("sounds/gameWin.wav", winsound.SND_FILENAME)
+                            winsound.PlaySound("sounds/gameWin.wav", winsound.SND_FILENAME | winsound.SND_ASYNC)
                             checkForStopCode = False
                     checkForStopLoop = False
         if checkForStopCode:
             createGrid()
 def continueGame():
     global  checkForMonsterMove, checkForStopCode, sontaHaskey, number, array2D
-    # canvas.delete('all')
-    # createGrid()
     canvas.create_text(650, 350,text='Whould you like to continue the Game!', fill="red", font=('Purisa', 30))
     canvas.create_rectangle(450, 490, 580, 550, fill='blue', tags='continuegame')
     canvas.create_text(515, 520,text='YES', fill="white", font=('Purisa', 35), tags='continuegame')
